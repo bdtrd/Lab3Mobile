@@ -76,7 +76,7 @@
         android:layout_width="@dimen/match_constraints"
         android:layout_height="wrap_content"
         android:textColor="@color/grey"
-        android:textSize="@dimen/text_size_short_desc"
+        android:textSize="@dimen/text_size_long_desc"
         android:textAlignment="center"
         android:layout_marginTop="@dimen/full_tip_long_desc_margin_top"
         android:layout_marginHorizontal="@dimen/full_tip_text_margin_sides"
