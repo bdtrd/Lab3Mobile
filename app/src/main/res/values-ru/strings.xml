@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Lab3Mobile</string>
+    <string name="day_format">День %d</string>
     <string name="day1_header">Спи без чувства вины</string>
     <string name="day1_short_desc">Отдых — не награда за усталость, а базовая потребность.</string>
     <string name="day1_long_desc">Кот не оправдывается за сон посреди дня и не пишет себе мысленный список долгов за каждый час отдыха. Если тебе нужно остановиться, полежать, перевести дух — это не слабость и не лень. Иногда лучший способ продолжить путь — сначала свернуться клубком и восстановиться.</string>

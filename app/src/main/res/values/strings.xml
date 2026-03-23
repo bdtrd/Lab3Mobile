@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Lab3Mobile</string>
+    <string name="day_format">Day %d</string>
     <string name="day1_header">Sleep Without Guilt</string>
     <string name="day1_short_desc">Rest is not a reward for exhaustion. It is a basic need.</string>
     <string name="day1_long_desc">A cat never apologizes for taking a nap in the middle of the day or mentally keeps score of every hour spent resting. If you need to stop, lie down, and catch your breath, that is not weakness and not laziness. Sometimes the best way to keep going is to curl up for a while and recover first.</string>
