@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class TipAdapter (val tipList: List<Tip>) : RecyclerView.Adapter<TipViewHolder>(){
+class TipAdapter (val tipList: List<Tip>, val onClick: (Tip) -> Unit) : RecyclerView.Adapter<TipViewHolder>(){
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -22,6 +22,8 @@ class TipAdapter (val tipList: List<Tip>) : RecyclerView.Adapter<TipViewHolder>(
         holder.header.setText(tip.header)
         holder.shortDesc.setText(tip.shortDesc)
         holder.image.setImageResource(tip.image)
+
+        holder.itemView.setOnClickListener { onClick(tip) }
     }
 
     override fun getItemCount(): Int {
