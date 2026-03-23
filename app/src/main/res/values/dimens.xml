@@ -21,4 +21,7 @@
     <dimen name="full_tip_short_desc_margin_top">15dp</dimen>
     <dimen name="full_tip_long_desc_margin_top">10dp</dimen>
     <dimen name="full_tip_text_margin_sides">10dp</dimen>
+    <dimen name="full_tip_header_margin_top_hor">15dp</dimen>
+    <dimen name="full_tip_day_margin_top_hor">20dp</dimen>
+    <dimen name="full_tip_day_margin_top_vert">10dp</dimen>
 </resources>

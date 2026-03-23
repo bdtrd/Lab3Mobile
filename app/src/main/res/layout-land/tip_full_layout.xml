@@ -6,6 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+
     <TextView
         android:id="@+id/day"
         android:layout_width="wrap_content"
@@ -13,9 +15,9 @@
         android:textSize="@dimen/text_size_day"
         android:fontFamily="sans-serif-black"
         android:textColor="@color/white"
-        android:layout_marginTop="@dimen/full_tip_day_margin_top_vert"
+        android:layout_marginTop="@dimen/full_tip_day_margin_top_hor"
 
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
@@ -23,36 +25,38 @@
 
     <ImageView
         android:id="@+id/tipIllust"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:padding="@dimen/full_tip_image_padding"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/day"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
 
         tools:srcCompat="@drawable/i3" />
 
     <TextView
         android:id="@+id/tip_header"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/match_constraints"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/black"
         android:textSize="@dimen/text_size_header"
         android:textAlignment="center"
         android:layout_marginHorizontal="@dimen/full_tip_text_margin_sides"
+        android:layout_marginTop="@dimen/full_tip_header_margin_top_hor"
 
-        app:layout_constraintTop_toBottomOf="@id/tipIllust"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/day"
+        app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
 
         tools:text="MEEEEEEEEOOOOW!"/>
 
     <TextView
         android:id="@+id/short_desc"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/match_constraints"
         android:layout_height="wrap_content"
         android:textColor="@color/grey"
         android:textSize="@dimen/text_size_short_desc"
@@ -62,14 +66,14 @@
 
 
         app:layout_constraintTop_toBottomOf="@id/tip_header"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
 
         tools:text="Много-много какого-то текста" />
 
     <TextView
         android:id="@+id/long_desc"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/match_constraints"
         android:layout_height="wrap_content"
         android:textColor="@color/grey"
         android:textSize="@dimen/text_size_short_desc"
@@ -78,9 +82,16 @@
         android:layout_marginHorizontal="@dimen/full_tip_text_margin_sides"
 
         app:layout_constraintTop_toBottomOf="@id/short_desc"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
 
         tools:text="Много-много-много-много, прям ну очень много какого-то текста" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
