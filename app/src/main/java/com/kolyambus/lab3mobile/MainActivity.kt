@@ -1,5 +1,6 @@
 package com.kolyambus.lab3mobile
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +15,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val rView = findViewById<RecyclerView>(R.id.recyclerView)
-        rView.layoutManager = LinearLayoutManager(this)
+        rView.layoutManager = LinearLayoutManager(this, rViewOrientation(), false)
         rView.adapter = TipAdapter(TipList.tips)
+    }
+
+    fun rViewOrientation(): Int {
+        if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+            return LinearLayoutManager.HORIZONTAL
+        return LinearLayoutManager.VERTICAL
     }
 }
