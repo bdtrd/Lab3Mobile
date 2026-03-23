@@ -30,7 +30,7 @@ class TipFullActivity : AppCompatActivity() {
     fun initPointers() {
         day = findViewById(R.id.day)
         image = findViewById(R.id.tipIllust)
-        header = findViewById(R.id.tipHeader)
+        header = findViewById(R.id.tip_header)
         shortDesc = findViewById(R.id.short_desc)
         longDesc = findViewById(R.id.long_desc)
     }
