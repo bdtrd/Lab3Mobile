@@ -15,11 +15,11 @@
     <dimen name="text_size_short_desc_tablet">22sp</dimen>
     <dimen name="text_size_long_desc">14sp</dimen>
     <dimen name="text_size_long_desc_tablet">22sp</dimen>
-    <dimen name="image_bottom_padding_hor">20dp</dimen>
+    <dimen name="image_bottom_padding_hor">10dp</dimen>
     <dimen name="image_bottom_padding_vert">20dp</dimen>
-    <dimen name="header_top_padding_hor">20dp</dimen>
+    <dimen name="header_top_padding_hor">10dp</dimen>
     <dimen name="header_top_padding_vert">20dp</dimen>
-    <dimen name="short_desc_top_padding_hor">10dp</dimen>
+    <dimen name="short_desc_top_padding_hor">5dp</dimen>
     <dimen name="short_desc_top_padding_vert">10dp</dimen>
 
     <dimen name="full_tip_image_padding">10dp</dimen>

@@ -2,7 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="400dp"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="@dimen/card_margin_hor"
     android:layout_marginVertical="@dimen/card_margin_vert"
@@ -40,7 +40,7 @@
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/pastel_pink"
-            android:textSize="@dimen/text_size_day"
+            android:textSize="@dimen/text_size_day_tablet"
             android:textAlignment="center"
             android:layout_marginTop="@dimen/card_padding"
             android:layout_marginEnd="@dimen/card_padding"
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_size_header"
+            android:textSize="@dimen/text_size_header_tablet"
             android:textAlignment="center"
             android:layout_marginTop="@dimen/header_top_padding_hor"
             android:layout_marginHorizontal="@dimen/card_padding"
@@ -73,7 +73,7 @@
             android:layout_width="@dimen/match_constraints"
             android:layout_height="wrap_content"
             android:textColor="@color/grey"
-            android:textSize="@dimen/text_size_short_desc"
+            android:textSize="@dimen/text_size_short_desc_tablet"
             android:textAlignment="center"
             android:layout_marginTop="@dimen/short_desc_top_padding_hor"
             android:layout_marginStart="@dimen/card_padding"
@@ -91,7 +91,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.65"/>
+            app:layout_constraintGuide_percent="0.7"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
