@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="match_constraints">0dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="card_corner_radius">30dp</dimen>
+    <dimen name="card_margin_hor">10dp</dimen>
+    <dimen name="card_margin_vert">8dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="ar_square">1</dimen>
+    <dimen name="text_size_day">40sp</dimen>
+    <dimen name="text_size_day_tablet">60sp</dimen>
+    <dimen name="text_size_header">20sp</dimen>
+    <dimen name="text_size_header_tablet">30sp</dimen>
+    <dimen name="text_size_short_desc">14sp</dimen>
+    <dimen name="text_size_short_desc_tablet">22sp</dimen>
+    <dimen name="text_size_long_desc">14sp</dimen>
+    <dimen name="text_size_long_desc_tablet">22sp</dimen>
+    <dimen name="image_bottom_padding_hor">10dp</dimen>
+    <dimen name="image_bottom_padding_vert">20dp</dimen>
+    <dimen name="header_top_padding_hor">10dp</dimen>
+    <dimen name="header_top_padding_vert">20dp</dimen>
+    <dimen name="short_desc_top_padding_hor">5dp</dimen>
+    <dimen name="short_desc_top_padding_vert">10dp</dimen>
+
+    <dimen name="full_tip_image_padding">10dp</dimen>
+    <dimen name="full_tip_short_desc_margin_top">15dp</dimen>
+    <dimen name="full_tip_long_desc_margin_top">10dp</dimen>
+    <dimen name="full_tip_text_margin_sides">10dp</dimen>
+    <dimen name="full_tip_header_margin_top_hor">15dp</dimen>
+    <dimen name="full_tip_day_margin_top_hor">20dp</dimen>
+    <dimen name="full_tip_day_margin_top_vert">10dp</dimen>
+
+    <dimen name="text_title_size">40sp</dimen>
+    <dimen name="text_title_size_tablet">60sp</dimen>
+</resources>

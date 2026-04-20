@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastel_pink"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_day_tablet"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/full_tip_day_margin_top_vert"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:text = "День 18" />
+
+    <ImageView
+        android:id="@+id/tipIllust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/full_tip_image_padding"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/day"
+
+        tools:srcCompat="@drawable/i3" />
+
+    <TextView
+        android:id="@+id/tip_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_header_tablet"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/full_tip_text_margin_sides"
+
+        app:layout_constraintTop_toBottomOf="@id/tipIllust"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        tools:text="MEEEEEEEEOOOOW!"/>
+
+    <TextView
+        android:id="@+id/short_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text_size_short_desc_tablet"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/full_tip_short_desc_margin_top"
+        android:layout_marginHorizontal="@dimen/full_tip_text_margin_sides"
+
+
+        app:layout_constraintTop_toBottomOf="@id/tip_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        tools:text="Много-много какого-то текста" />
+
+    <TextView
+        android:id="@+id/long_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text_size_long_desc_tablet"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/full_tip_long_desc_margin_top"
+        android:layout_marginHorizontal="@dimen/full_tip_text_margin_sides"
+
+        app:layout_constraintTop_toBottomOf="@id/short_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        tools:text="Много-много-много-много, прям ну очень много какого-то текста" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
